@@ -1,0 +1,77 @@
+.nav-links {
+  margin: 10px;
+}
+.nav-links a {
+  float: left;
+  width: 33.33%;
+}
+.nav-links a img {
+  width: 100%;
+}
+.brand {
+  margin: 0 10px;
+}
+.brand .brand-title img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.brand ul li {
+  float: left;
+  width: 25%;
+}
+.brand ul li a {
+  display: block;
+}
+.brand ul li a img {
+  width: 100%;
+}
+.product {
+  padding: 0 10px;
+}
+.product .title {
+  width: 100%;
+  margin: 10px 0;
+}
+.product ul li {
+  float: left;
+  width: 50%;
+  padding: 5px;
+  text-align: center;
+}
+.product ul li a {
+  display: block;
+  box-shadow: 0 0 3px #ccc;
+  padding: 5px;
+}
+.product ul li a img {
+  width: 100%;
+}
+.product ul li a span {
+  display: block;
+  color: #8f8f94;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 15px;
+  height: 38px;
+  overflow: hidden;
+}
+.product ul li a p {
+  text-align: center;
+  padding: 5px 0;
+  margin-bottom: 5px;
+}
+.product ul li a p i {
+  color: #f20;
+  font-size: 16px;
+  padding-right: 2px;
+}
+.product ul li a p del {
+  font-size: 12px;
+  padding-left: 2px;
+}
+.product ul li a button {
+  background-color: #006699;
+  color: #fff;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
