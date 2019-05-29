@@ -1,0 +1,45 @@
+.container{
+  padding: 10px;
+  .search{
+    position: relative;
+    padding-bottom: 15px;
+    input[type='text']{
+      height: 30px;
+      padding-right: 70px;
+      margin: 0;
+      font-size: 14px;
+      border-color: #069;
+    }
+    input[type='button']{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 30px;
+      background-color: #069;
+      border: none;
+      color: #fff;
+      border-radius: 0;
+    }
+  }
+  .history-top{
+    font-size: 14px;
+    color: #8f8f94;
+    margin-bottom: 15px;
+    i{
+      float: left;
+    }
+    em{
+      float: right;
+      span{
+        font-size: 16px;
+        vertical-align: top;
+        margin-right: 4px;
+        // line-height: none;
+      }
+    }
+  }
+  .mui-table-view-cell::after{
+    left: 0;
+  }
+}

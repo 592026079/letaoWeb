@@ -2,9 +2,7 @@ body,
 .mui-content {
   background-color: #fff;
 }
-body {
-  height: 3000px;
-}
+
 ul {
   list-style: none;
 }
@@ -15,6 +13,9 @@ ul {
 img {
   vertical-align: middle;
   margin: 0;
+}
+a{
+  color: #000;
 }
 i,
 em {

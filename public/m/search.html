@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+  <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/search.css">
+  <script src="assets/mui/js/mui.min.js"></script>
+  <title>Document</title>
+
+</head>
+
+<body>
+  <header class="mui-bar mui-bar-nav">
+    <h1 class="mui-title">搜索中心</h1>
+    <a href="search.html" class="mui-icon mui-icon-search mui-pull-right"></a>
+  </header>
+  <nav class="mui-bar mui-bar-tab footer">
+    <a class="mui-tab-item mui-active" href="index.html">
+      <span class="mui-icon mui-icon-home"></span>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="category.html">
+      <span class="mui-icon mui-icon-bars"></span>
+      <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-tab-item" href="cart.html">
+      <span class="mui-icon fa fa-shopping-cart"></span>
+      <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-tab-item" href="user.html">
+      <span class="mui-icon mui-icon-person"></span>
+      <span class="mui-tab-label">会员中心</span>
+    </a>
+  </nav>
+  <div class="mui-content">
+    <div class="container">
+      <!-- 搜索框开始 -->
+      <div class="search">
+        <input type="text" placeholder="搜索您喜欢的商品">
+        <input type="button" value="搜索">
+      </div>
+      <!-- 搜索框结束 -->
+      <!-- 搜索历史 -->
+      <div class="history-top mui-clearfix">
+        <i>搜索历史</i>
+        <em><span class="mui-icon mui-icon-trash"></span> 清空历史</em>
+      </div>
+      <ul class="mui-table-view">
+        <li class="mui-table-view-cell">Item 1</li>
+        <li class="mui-table-view-cell">Item 2</li>
+        <li class="mui-table-view-cell">Item 3</li>
+      </ul>
+      <!-- 搜索历史结束 -->
+    </div>
+  </div>
+</body>
+
+</html>
