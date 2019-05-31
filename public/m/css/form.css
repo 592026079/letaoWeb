@@ -1,0 +1,18 @@
+.yzm-f{
+  position: relative;
+}
+.yzm{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  color: #069;
+  transform: translateY(-50%);
+}
+.login{
+  float: right;
+  margin: 10px 10px 0 0 ;
+  color: #069;
+}
+.mui-btn-primary{
+  padding: 6px 80px;
+}

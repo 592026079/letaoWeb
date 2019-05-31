@@ -12,6 +12,7 @@
   <script src="assets/mui/js/mui.min.js"></script>
   <script src="assets/zepto/zepto.min.js"></script>
   <script src="assets/artTemplate/template-web.js"></script>
+  <script src="js/public.js"></script>
   <script src="js/category.js"></script>
   <title>Document</title>
 </head>
@@ -22,11 +23,11 @@
     <a href="search.html" class="mui-icon mui-icon-search mui-pull-right"></a>
   </header>
   <nav class="mui-bar mui-bar-tab footer">
-    <a class="mui-tab-item mui-active" href="index.html">
+    <a class="mui-tab-item" href="index.html">
       <span class="mui-icon mui-icon-home"></span>
       <span class="mui-tab-label">首页</span>
     </a>
-    <a class="mui-tab-item" href="category.html">
+    <a class="mui-tab-item mui-active" href="category.html">
       <span class="mui-icon mui-icon-bars"></span>
       <span class="mui-tab-label">分类</span>
     </a>
@@ -88,7 +89,7 @@
   <script type="text/template" id="secondTem">
     {{each rows v k}}
       <li>
-        <a href="#">
+        <a data-id="{{v.id}}"  href="#">
           <img src="{{v.brandLogo}}" alt="">
           <span>{{v.brandName}}</span>
         </a>

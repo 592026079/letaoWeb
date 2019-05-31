@@ -35,7 +35,7 @@ $(function () {
     }
   });
 
-  $('#links').on('click', 'a', function () {
+  $('#links').on('tap', 'a', function () {
     $(this).addClass('active').siblings().removeClass('active');
     var id = $(this).attr('data-id');
     getSecond(id);

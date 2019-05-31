@@ -1,5 +1,9 @@
 .mui-content{
-  padding: 10px;
+  position: absolute;
+  width: 100%;
+  top: 44px;
+  bottom: 50px;
+  padding: 0 10px !important;
 }
 .product{
   padding: 0;

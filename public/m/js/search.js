@@ -6,6 +6,7 @@ $(function () {
       alert('请输入关键字');
       return;
     }
+    // console.log(hisArr);
     hisArr.push(keyword);
     localStorage.setItem('search-history', JSON.stringify(hisArr));
     location.href = "search-result.html?keyword=" + keyword;
