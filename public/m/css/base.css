@@ -2,9 +2,12 @@ body,
 .mui-content {
   background-color: #fff;
 }
-
-ul {
+ul,
+li {
   list-style: none;
+}
+a {
+  color: #000;
 }
 * {
   padding: 0;
@@ -13,9 +16,6 @@ ul {
 img {
   vertical-align: middle;
   margin: 0;
-}
-a{
-  color: #000;
 }
 i,
 em {

@@ -1,0 +1,18 @@
+.mui-content{
+  padding: 10px;
+}
+.product{
+  padding: 0;
+}
+.filter div{
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #efeff4;
+  margin: 10px 0 15px 0;
+  font-size: 14px;
+}
+.filter div span{
+  font-size: 16px;
+  margin-left: 3px;
+}

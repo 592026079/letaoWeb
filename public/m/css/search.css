@@ -42,3 +42,8 @@
 .container .mui-table-view-cell::after {
   left: 0;
 }
+.container #history-bottom span {
+  float: right;
+  font-size: 14px;
+  color: #ccc;
+}
