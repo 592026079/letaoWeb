@@ -1,3 +1,7 @@
+.mui-input-group,
+.mui-input-group input{
+  font-size: 14px;
+}
 .yzm-f{
   position: relative;
 }

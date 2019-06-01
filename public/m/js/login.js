@@ -22,18 +22,22 @@ $(function () {
           mui.toast('用户名格式错误');
           return false;
         }
-        if (!/^[a-zA-Z]\w{5,17}$/.test(password)) {
+        if (!/^[a-zA-Z0-9]\w{5,17}$/.test(password)) {
           mui.toast('用户密码最低6位');
           return false;
         }
+        $('#login').html('登陆中.....');
       },
       success: function (res) {
-        if (res.error) {
-          mui.toast(res.message);
-          return;
-        }
         if (res.success) {
-          location.href = 'user.html';
+          $('#login').html('登陆成功');
+          mui.toast('登陆成功');
+          setTimeout(() => {
+            location.href = 'user.html'
+          }, 2000);
+        } else {
+          mui.toast(res.message);
+          $('#login').html('登陆');
         }
       }
     });

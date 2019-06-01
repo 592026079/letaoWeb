@@ -1,12 +1,10 @@
 $(function () {
-  var num;
   $('.yzm').on('click', function () {
     $.ajax({
       type: "get",
       url: "/user/vCode",
       success: function (res) {
-        num = res.vCode;
-        console.log(num);
+        console.log(res.vCode);
       }
     });
   })
@@ -20,7 +18,7 @@ $(function () {
       mui.toast('用户名格式错误');
       return;
     }
-    if (!/^[a-zA-Z]\w{5,17}$/.test(password)) {
+    if (!/^[a-zA-Z0-9]\w{5,17}$/.test(password)) {
       mui.toast('用户密码最低6位');
       return;
     }
@@ -36,10 +34,6 @@ $(function () {
       mui.toast('请输入验证码(6位哦)');
       return;
     }
-    if (vCode != num) {
-      mui.toast('验证码错误');
-      return;
-    }
     $.ajax({
       type: "post",
       url: "/user/register",
@@ -52,7 +46,9 @@ $(function () {
       success: function (res) {
         if (res.success) {
           location.href = 'login.html';
+          return;
         }
+        mui.toast(res.message);
       }
     });
   })
