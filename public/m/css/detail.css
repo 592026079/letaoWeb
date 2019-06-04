@@ -1,0 +1,63 @@
+.product-title{
+  padding: 10px;
+  font-size: 16px;
+}
+.price{
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+.price .new{
+  font-size: 24px;
+  color: #ea543d;
+}
+.price .old{
+  color: #ccc;
+  text-decoration: line-through;
+}
+.size .active{
+  background-color: orangered;
+  color: #fff;
+  border-color: orangered;
+  box-shadow: 0 0 3px orangered;
+}
+.size{
+  padding: 10px;
+  font-size: 14px;
+}
+.size span{
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+.number{
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+.number span{
+  margin-left: 10px;
+}
+.number button,.number input{
+  width: 28px;
+  height: 28px;
+}
+.shopping-car{
+  padding: 10px;
+}
+.shopping-car a{
+  float: left;
+  width: 50%;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  background-color: darkred;
+}
+.shopping-car .read{
+  background-color: orangered;
+}

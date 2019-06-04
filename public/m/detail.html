@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+  <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/detail.css">
+  <script src="assets/mui/js/mui.min.js"></script>
+  <script src="assets/zepto/zepto.min.js"></script>
+  <script src="assets/artTemplate/template-web.js"></script>
+  <script src="js/public.js"></script>
+  <script src="js/detail.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="mui-bar mui-bar-nav">
+    <span class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: #fff;"></span>
+    <h1 class="mui-title">商品详情</h1>
+  </header>
+  <nav class="mui-bar mui-bar-tab footer">
+    <a class="mui-tab-item" href="index.html">
+      <span class="mui-icon mui-icon-home"></span>
+      <span class="mui-tab-label">首页</span>
+    </a>
+    <a class="mui-tab-item" href="category.html">
+      <span class="mui-icon mui-icon-bars"></span>
+      <span class="mui-tab-label">分类</span>
+    </a>
+    <a class="mui-tab-item" href="cart.html">
+      <span class="mui-icon fa fa-shopping-cart"></span>
+      <span class="mui-tab-label">购物车</span>
+    </a>
+    <a class="mui-tab-item" href="user.html">
+      <span class="mui-icon mui-icon-person"></span>
+      <span class="mui-tab-label">会员中心</span>
+    </a>
+  </nav>
+  <div class="mui-content">
+    <!-- 轮播图 -->
+    <div id="det-box"></div>
+
+    <div class="shopping-car mui-clearfix">
+      <a href="cart.html" class="read">查看购物车</a>
+      <a href="javascript:;" class="join-car">加入购物车</a>
+    </div>
+  </div>
+  <script type="text/template" id="detTem">
+    <div class="mui-slider">
+        <div class="mui-slider-group ">
+          <!--支持循环，需要重复图片节点-->
+          {{each pic val key}}
+          <div class="mui-slider-item"><img src="{{val.picAddr}}" titie="{{val.picName}}" /></div>
+          {{/each}}
+          <!--支持循环，需要重复图片节点-->
+        </div>
+      </div>
+      <!-- 轮播图结束 -->
+      <div class="product-title">
+        {{proName}}
+      </div>
+      <div class="price">
+        价格:
+        <span class="new">￥{{price}}</span>
+        <span class="old">￥{{oldPrice}}</span>
+      </div>
+      <div class="size">
+        尺码：
+        <% var siz = size.split('-')%>
+        <% for (var i = siz[0];i<=siz[1];i++){ %>
+          <span>{{i}}</span>
+        <% } %>
+      </div>
+      <div class="number">
+          数量：
+          <div class="mui-numbox" data-numbox-min='1' data-numbox-max='{{num}}'>
+            <!-- "-"按钮，点击可减小当前数值 -->
+            <button class="mui-btn mui-numbox-btn-minus" type="button">-</button><input class="mui-numbox-input"
+              type="number" /><button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+          </div>
+          <span>剩余：{{num}}件</span>
+        </div>
+  
+  </script>
+</body>
+
+</html>

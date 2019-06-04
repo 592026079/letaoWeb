@@ -51,7 +51,6 @@ $(function () {
     getData();
   })
 
-
 })
 // url 传入的地址栏
 // key 需要获取的参数名(string);

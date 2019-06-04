@@ -1,0 +1,13 @@
+.mui-table-view{
+  margin-top: 0 !important;
+}
+.mui-content .allPrice{
+  padding: 15px;
+  margin: 5px 0;
+}
+.mui-ellipsis{
+  white-space: normal !important;
+}
+.mui-ellipsis span{
+  color: red;
+}

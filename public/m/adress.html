@@ -15,9 +15,10 @@
   <script src="js/adress.js"></script>
   <title>Document</title>
   <style>
-    .mui-media{
+    .mui-media {
       padding: 0;
     }
+
     .mui-media-body {
       font-size: 14px;
       padding: 11px 14px;
@@ -72,14 +73,16 @@
   </div>
   <script type="text/template" id="addTem">
     {{each data val key}}
-    <li data-id="{{val.id}}" class="mui-table-view-cell mui-media">
+    <li data-id="{{val.id}}" class="mui-table-view-cell mui-media mui-transitioning">
         <div class="mui-slider-right mui-disabled ">
             <span class="mui-btn mui-btn-blue update" style="transform: translate(-88px, 0px);">编辑</span>
             <a href="javascript:;" class="mui-btn mui-btn-red del" style="transform: translate(-88px, 0px);">删除</a>
         </div>
-        <div class="mui-media-body mui-slider-handle">
+        <div class=" mui-slider-handle">
+          <div class="mui-media-body">
             邮编{{val.postCode}} 收货人：{{val.recipients}}
             <p class="mui-ellipsis">{{val.address+val.addressDetail}}</p>
+          </div>
         </div>
       </li>
     {{/each}}

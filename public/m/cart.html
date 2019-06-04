@@ -8,15 +8,18 @@
   <link rel="stylesheet" href="assets/mui/css/mui.min.css">
   <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/cart.css">
   <script src="assets/mui/js/mui.min.js"></script>
   <script src="assets/zepto/zepto.min.js"></script>
+  <script src="assets/artTemplate/template-web.js"></script>
   <script src="js/public.js"></script>
+  <script src="js/cart.js"></script>
   <title>Document</title>
 </head>
 
 <body>
   <header class="mui-bar mui-bar-nav">
-    <h1 class="mui-title">乐淘云购</h1>
+    <h1 class="mui-title">购物车</h1>
     <a href="#" class="mui-icon mui-icon-search mui-pull-right"></a>
   </header>
   <nav class="mui-bar mui-bar-tab footer">
@@ -38,8 +41,49 @@
     </a>
   </nav>
   <div class="mui-content">
-
+    <ul class="mui-table-view">
+      <!-- <li class="mui-table-view-cell mui-media mui-transitioning">
+        <div class="mui-slider-right mui-disabled">
+          <a class="mui-btn mui-btn-blue" style="transform: translate(0px, 0px);">编辑</a>
+          <a class="mui-btn mui-btn-red" style="transform: translate(0px, 0px);">删除</a>
+        </div>
+        <div class="mui-slider-handle" style="transform: translate(0px, 0px);">
+          <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left" src="../images/shuijiao.jpg">
+            <div class="mui-media-body">
+              <p class='mui-ellipsis'>
+                能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？<br>
+                <input type="checkbox"><span>￥499.1</span><del>￥888.1</del><i>鞋码：<em class="size">43</em>×<em
+                    class="num">5</em>双</i>
+              </p>
+            </div>
+          </a>
+        </div>
+      </li> -->
+    </ul>
+    <h4 class="allPrice">订单总额：￥110</h4>
   </div>
+  <script type="text/template" id="cartTem">
+    {{each data val key}}
+    <li class="mui-table-view-cell mui-media mui-transitioning">
+        <div class="mui-slider-right mui-disabled">
+          <a class="mui-btn mui-btn-blue" data-id="{{val.id}}" style="transform: translate(0px, 0px);">编辑</a>
+          <a class="mui-btn mui-btn-red" style="transform: translate(0px, 0px);">删除</a>
+        </div>
+        <div class="mui-slider-handle" style="transform: translate(0px, 0px);">
+          <a href="javascript:;">
+            <img class="mui-media-object mui-pull-left" src="{{val.pic[0].picAddr}}">
+            <div class="mui-media-body">
+              <p class='mui-ellipsis'>
+               {{val.proName}}<br>
+                <input type="checkbox"><span>￥{{val.price}}</span><del>￥{{val.oldPrice}}</del><i>鞋码：<em class="size">{{val.size}}</em>×<em class="num">{{val.num}}</em>双</i>
+              </p>
+            </div>
+          </a>
+        </div>
+      </li>
+      {{/each}}
+  </script>
 </body>
 
 </html>
