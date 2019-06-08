@@ -25,13 +25,6 @@ $(function () {
 	})
 
 
-
-
-
-
-
-
-
 	var navLi = $('.navs li')
 
 	navLi.on('click', function () {
